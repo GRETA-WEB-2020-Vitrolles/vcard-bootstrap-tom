@@ -29,6 +29,9 @@
       .border-white{
         border: 1px solid white;
       }
+      .border-red{
+        border: 5px solid red;
+      }
 
       .red-hover:hover {
         color: red;
@@ -60,16 +63,19 @@
 
     </div> -->
 
-    <header class="container back-black">
+    <header class="container back-black pt-4">
 
 
       <div class="back-black font-white text-center ">
 
         <img src="https://fakeimg.pl/250x100/ff0000/"> <br>  <!-- NOTE: https://fakeimg.pl/ -->
 
-        Thomas ZARBO <br>
-        Développeur web <br>
-        En recherche de stage du xx au xx
+        <div class="my-3 border-red">
+
+          Thomas ZARBO <br>
+          Développeur web <br>
+          En recherche de stage du xx au xx
+        </div>
 
 
 
@@ -77,17 +83,23 @@
       </div>
 
 
-      <div class="row">
+      <div class="row p-0 border-top">
 
-        <div class="col btn border-white font-white red-hover">
-          <i class="fas fa-phone-alt"></i> <br>
-          APPELER
+        <div class="col p-0 red-hover border-right">
+          <a class="btn btn-dark w-100 text-white"
+          href="tel:06">
+            <span class="fas fa-phone-alt"></span> <br>
+            <span class="text-uppercase" > Appeler </span>
+          </a>
         </div>
 
 
-        <div class="col btn border-white font-white red-hover">
-          <i class="fas fa-paper-plane"></i> <br>
-          E-MAIL
+        <div class="col p-0 red-hover border-left">
+          <a class="btn btn-dark w-100 text-white"
+          href="mailto:thomas.zarbo@yahoo.fr">
+            <span class="fas fa-paper-plane"></span> <br>
+            <span class="text-uppercase" > E-mail </span>
+          </a>
         </div>
 
 
