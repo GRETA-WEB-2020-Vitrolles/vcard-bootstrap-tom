@@ -16,12 +16,12 @@
       div {
         border: 1px solid black;
       }
-
+      header,
+      .btn-dark {
+      	background-color: black;
+      }
       .big {
         font-size: 8em;
-      }
-      .back-black {
-        background-color: black;
       }
       .font-white {
         color: white;
@@ -29,10 +29,6 @@
       .border-white{
         border: 1px solid white;
       }
-      .border-red{
-        border: 5px solid red;
-      }
-
       .red-hover:hover {
         color: red;
       }
@@ -93,35 +89,35 @@ git add exo-vcard.html
 git commit -m "ma black card"
 git push
 
-git switch -c
+git switch -c xxx
+
+$ git add exo-vcard.html
+$ git commit -m "mettre des espaces entre les icones et description"
+$ git push --set-upstream origin xxx
+
+$ touch tutu.txt
+$ vi tutu.txt
+/appuyer sur :wq pour sortir de la boite
     </div> -->
 
-    <header class="container back-black pt-4">
+    <header class="container pt-4">
 
+      <div class="font-white text-center ">
 
-      <div class="back-black font-white text-center ">
-
-        <img src="https://fakeimg.pl/250x100/ff0000/"> <br>
+        <img src="https://fakeimg.pl/250x100/ff0000/"><br>
 
           <!-- NOTE: https://fakeimg.pl/ -->
           <!-- NOTE: https://getbootstrap.com/ -->
           <!-- NOTE: https://validator.w3.org/#validate_by_input -->
           <!-- NOTE: https://fontawesome.com/icons?d=gallery&m=free -->
 
-
-
-        <div class="my-3 border-red">
-
-          Thomas ZARBO <br>
-          Développeur web <br>
+        <div class="my-3">
+          Thomas ZARBO<br>
+          Développeur web<br>
           En recherche de stage du xx au xx
         </div>
 
-
-
-
       </div>
-
 
       <div class="row p-0 border-top">
 
@@ -129,46 +125,50 @@ git switch -c
           <a class="btn btn-dark w-100 text-white"
           href="tel:06">
             <span class="fas fa-phone-alt"></span> <br>
-            <span class="text-uppercase" > Appeler </span>
+            <span class="text-uppercase">Appeler</span>
           </a>
         </div>
-
 
         <div class="col p-0 red-hover border-left">
           <a class="btn btn-dark w-100 text-white"
           href="mailto:thomas.zarbo@yahoo.fr">
             <span class="fas fa-paper-plane"></span> <br>
-            <span class="text-uppercase" > E-mail </span>
+            <span class="text-uppercase">E-mail</span>
           </a>
         </div>
 
-
       </div>
-
 
     </header>
 
     <div class="container font-size">
 
-      <a href="#" class=""> <span class="fas fa-info-circle"></span>my information </a> <hr>
-      <a href="#">  <span class="fas fa-phone-alt"></span>  my phone number </a><hr>
-      <a href="#"> <span class="fas fa-paper-plane"></span>my email </a><hr>
-      <a href="#"> <span class="fas fa-briefcase"></span>GRETA-CFA </a><hr>
-      <a href="#"> <span class="fas fa-map-marker-alt"></span>MARIGNANE </a><hr>
-      <a href="#"> <span class="fas fa-globe"></span>my web site </a><hr>
-      <a href="#"> <span class="fas fa-share-alt"></span>social media </a><hr>
+      <a href="#" class=""><span class="fas fa-info-circle"></span>my information</a><hr>
+      <a href="#"><span class="fas fa-phone-alt"></span>my phone number</a><hr>
+      <a href="#"><span class="fas fa-paper-plane"></span>my email</a><hr>
+      <a href="#"><span class="fas fa-briefcase"></span>GRETA-CFA</a><hr>
+      <a href="#"><span class="fas fa-map-marker-alt"></span>MARIGNANE</a><hr>
+      <a href="#"><span class="fas fa-globe"></span>my web site</a><hr>
+      <a href="#"><span class="fas fa-share-alt"></span>social media</a><hr>
 
-      <span class="fab fa-viadeo"></span> <span class="fab fa-linkedin"></span> <span class="fab fa-github"></span>
+      <div class="text-center pt-5 border">
 
+        <a href="#"class="mx-6" >
+          <span class="fab fa-viadeo"></span>
+        </a>
+
+        <a href="#"class="mx-6" >
+          <span class="fab fa-linkedin"></span>
+        </a>
+
+        <a href="#"class="mx-6" >
+           <span class="fab fa-github"></span>
+        </a>
+
+        <!-- NOTE: icones sont centrer avec text-center de la div / cherche à séparer les 3 / en créant un a pour chaque -->
+      </div>
 
     </div>
-
-
-
-
-
-
-
 
 
     <!-- Optional JavaScript -->
