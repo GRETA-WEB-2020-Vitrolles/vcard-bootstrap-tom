@@ -16,12 +16,12 @@
       div {
         border: 1px solid black;
       }
-
+      header,
+      .btn-dark {
+      	background-color: black;
+      }
       .big {
         font-size: 8em;
-      }
-      .back-black {
-        background-color: black;
       }
       .font-white {
         color: white;
@@ -29,12 +29,14 @@
       .border-white{
         border: 1px solid white;
       }
-      .border-red{
-        border: 5px solid red;
-      }
-
       .red-hover:hover {
         color: red;
+      }
+      .font-size {
+        font-size: 2em;
+      }
+      .svg-inline--fa:not(.fa-2x) {
+        font-size: 1.5em;
       }
     </style>
   </head>
@@ -61,27 +63,75 @@
         Toto
       </div>
 
+      commande git
+
+      ls -l : afficher les fichiers/dossiers
+ls -al : afficher les fichiers/dossiers (+ ceux cachés)
+
+cd xxx : aller dans le dossier xxx
+cd .. : remonter d'un dossier
+cd / : se déplacer à la racine du disque
+cd - : revenir au dossier précédent
+
+ctrl + C passer son tour
+get clone
+touch xxx
+git status
+git commit
+
+git config
+
+
+git config user.name "Thomas"
+git config --global user.email "thomas.zarbo@yahoo.fr"
+
+git log
+git remote -v
+
+git add exo-vcard.html
+git commit -m "ma black card"
+git push
+
+git switch -c xxx
+
+$ git add exo-vcard.html
+$ git commit -m "mettre des espaces entre les icones et description"
+$ git push --set-upstream origin xxx
+
+$ touch tutu.txt
+$ vi tutu.txt
+/appuyer sur :wq pour sortir de la boite
+mémo :
+      [Mémo -vi-]
+      // Par défaut, on arrive en mode "commande"
+      Touche "i" => Mode insertion
+      Touche "Echap" => Mode commande
+
+      Une fois le mode "insertion" activé, on peut saisir son message
+
+      Touche "Echap" pour revenir au mode "commande".
+      Puis ":wq" pour Enregistrer&Quitter (write&quit)
     </div> -->
 
-    <header class="container back-black pt-4">
+    <header class="container pt-4">
 
+      <div class="font-white text-center ">
 
-      <div class="back-black font-white text-center ">
+        <img src="https://fakeimg.pl/250x100/ff0000/"><br>
 
-        <img src="https://fakeimg.pl/250x100/ff0000/"> <br>  <!-- NOTE: https://fakeimg.pl/ -->
+          <!-- NOTE: https://fakeimg.pl/ -->
+          <!-- NOTE: https://getbootstrap.com/ -->
+          <!-- NOTE: https://validator.w3.org/#validate_by_input -->
+          <!-- NOTE: https://fontawesome.com/icons?d=gallery&m=free -->
+          <!-- NOTE: https://atom.io/packages/atom-beautify -->
 
-        <div class="my-3 border-red">
-
-          Thomas ZARBO <br>
-          Développeur web <br>
+        <div class="my-3">
+          Thomas ZARBO<br>
+          Développeur web<br>
           En recherche de stage du xx au xx
         </div>
 
-
-
-
       </div>
-
 
       <div class="row p-0 border-top">
 
@@ -89,25 +139,176 @@
           <a class="btn btn-dark w-100 text-white"
           href="tel:06">
             <span class="fas fa-phone-alt"></span> <br>
-            <span class="text-uppercase" > Appeler </span>
+            <span class="text-uppercase">Appeler</span>
           </a>
         </div>
-
 
         <div class="col p-0 red-hover border-left">
           <a class="btn btn-dark w-100 text-white"
           href="mailto:thomas.zarbo@yahoo.fr">
             <span class="fas fa-paper-plane"></span> <br>
-            <span class="text-uppercase" > E-mail </span>
+            <span class="text-uppercase">E-mail</span>
           </a>
         </div>
 
-
       </div>
-
 
     </header>
 
+    <!-- <div class="container font-size">
+
+      <a href="#" class=""><span class="fas fa-info-circle"></span>my information</a><hr>
+      <a href="#"><span class="fas fa-phone-alt"></span>my phone number</a><hr>
+      <a href="#"><span class="fas fa-paper-plane"></span>my email</a><hr>
+      <a href="#"><span class="fas fa-briefcase"></span>GRETA-CFA</a><hr>
+      <a href="#"><span class="fas fa-map-marker-alt"></span>MARIGNANE</a><hr>
+      <a href="#"><span class="fas fa-globe"></span>my web site</a><hr>
+      <a href="#"><span class="fas fa-share-alt"></span>social media</a><hr>
+
+      <div class="text-center pt-5 border-0">
+
+        <a href="#"class="mx-6" >
+          <span class="fab fa-viadeo"></span>
+        </a>
+
+        <a href="#"class="mx-6" >
+          <span class="fab fa-linkedin"></span>
+        </a>
+
+        <a href="#"class="mx-6" >
+           <span class="fab fa-github"></span>
+        </a>
+
+      </div>
+
+    </div> -->
+    <!-- NOTE: icones sont centrer avec text-center de la div / cherche à séparer les 3 / en créant un a pour chaque -->
+
+    <main class="container pt-3">
+      <div class="row align-items-center my-3 border-0">
+          <div class="col-2 text-right border-0">
+              <span class="fas fa-fw fa-info-circle"></span>
+          </div>
+          <div class="col">
+              ma description<br>
+              personnelle
+          </div>
+      </div>
+
+      <hr class="w-50">
+
+      <div class="row align-items-center my-3 border-0">
+          <div class="col-2 text-right border-0">
+              <span class="fas fa-fw fa-phone-alt"></span>
+          </div>
+          <div class="col">
+              <a href="tel:0687974354">01 23 45 67 89</a><br />
+              <em class="text-sm">Mobile</em>
+          </div>
+      </div>
+
+      <hr class="w-50">
+
+      <div class="row align-items-center my-3 border-0">
+          <div class="col-2 text-right border-0">
+              <span class="fas fa-fw fa-paper-plane"></span>
+          </div>
+          <div class="col">
+              <a href="mailto:contact@F2000.fr">nospam@gmail.com</a><br />
+              <em class="text-sm">E-mail</em>
+          </div>
+      </div>
+
+      <hr class="w-50">
+
+      <div class="row align-items-center my-3 border-0">
+          <div class="col-2 text-right border-0">
+              <span class="fas fa-fw fa-briefcase"></span>
+          </div>
+          <div class="col">
+              GRETA-CFA<br />
+          </div>
+      </div>
+
+      <hr class="w-50">
+
+      <div class="row align-items-center my-3 border-0">
+          <div class="col-2 text-right border-0">
+              <span class="fas fa-fw fa-map-marker-alt"></span>
+          </div>
+          <div class="col">
+              Marignane
+          </div>
+      </div>
+
+      <hr class="w-50">
+
+      <div class="row align-items-center my-3 border-0">
+          <div class="col-2 text-right border-0">
+              <span class="fas fa-fw fa-globe"></span>
+          </div>
+          <div class="col">
+              <a target="_blank" href="#!">www.google.com</a><br />
+              <em class="text-sm">Site internet</em>
+          </div>
+      </div>
+
+      <hr class="w-50">
+
+      <div class="row my-3 border-0">
+          <div class="col-2 text-right border-0">
+              <span class="fas fa-fw fa-share-alt"></span>
+          </div>
+          <div class="col">
+              Réseaux sociaux
+              <div class="row pt-3 border-0">
+                  <div class="col-3 py-3 text-center">
+                      <a href="#!">
+                          <span class="fab fa-fw fa-2x fa-facebook"></span>
+                      </a>
+                  </div>
+                  <div class="col-3 py-3 text-center">
+                      <a href="#!">
+                          <span class="fab fa-fw fa-2x fa-linkedin"></span>
+                      </a>
+                  </div>
+                  <div class="col-3 py-3 text-center">
+                      <a href="#!">
+                          <span class="fab fa-fw fa-2x fa-viadeo"></span>
+                      </a>
+                  </div>
+                  <div class="col-3 py-3 text-center">
+                      <a href="#!">
+                          <span class="fas fa-fw fa-2x fa-globe"></span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </main>
+
+    <hr class="w-50">
+
+
+    <footer class="container" >
+      <div class="material p-0 mx-5 my-4">
+        <a href="#"
+        class="text-light btn btn-primary w-100 py-4">
+          <span class="fas fa-id-card mr-4"></span>
+          <span class="text-uppercase m-0">Télécharger VCARD</span>
+        </a>
+      </div>
+      <div class="material p-0 mx-5 my-4">
+        <a href="#"
+        class="text-light btn btn-dark w-100 py-4">
+          <span class="fas fa-share-alt mr-4"></span>
+          <span class="text-uppercase m-0">Partager cette page</span>
+        </a>
+      </div>
+      <div class="text-center text-light mt-4">
+        <p class="text-dark">Copyright &copy; 2020 - Tous droits réservés</p>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
