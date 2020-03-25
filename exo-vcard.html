@@ -202,7 +202,7 @@ mémo :
               <span class="fas fa-fw fa-phone-alt"></span>
           </div>
           <div class="col">
-              <a href="tel:0687974354">01 23 45 67 89</a><br />
+              <a href="tel:0687974354">01 23 45 67 89</a><br>
               <em class="text-sm">Mobile</em>
           </div>
       </div>
@@ -214,7 +214,7 @@ mémo :
               <span class="fas fa-fw fa-paper-plane"></span>
           </div>
           <div class="col">
-              <a href="mailto:contact@F2000.fr">nospam@gmail.com</a><br />
+              <a href="mailto:contact@F2000.fr">nospam@gmail.com</a><br>
               <em class="text-sm">E-mail</em>
           </div>
       </div>
@@ -226,7 +226,7 @@ mémo :
               <span class="fas fa-fw fa-briefcase"></span>
           </div>
           <div class="col">
-              GRETA-CFA<br />
+              GRETA-CFA<br>
           </div>
       </div>
 
@@ -248,7 +248,7 @@ mémo :
               <span class="fas fa-fw fa-globe"></span>
           </div>
           <div class="col">
-              <a target="_blank" href="#!">www.google.com</a><br />
+              <a target="_blank" href="#!">www.google.com</a><br>
               <em class="text-sm">Site internet</em>
           </div>
       </div>
@@ -292,15 +292,17 @@ mémo :
 
     <footer class="container" >
       <div class="material p-0 mx-5 my-4">
-        <a href="#"
-        class="text-light btn btn-primary w-100 py-4">
+        <a href=""
+        class="text-light btn btn-primary w-100 py-4"
+        data-toggle="modal" data-target="#Modal_1">
           <span class="fas fa-id-card mr-4"></span>
           <span class="text-uppercase m-0">Télécharger VCARD</span>
         </a>
       </div>
       <div class="material p-0 mx-5 my-4">
-        <a href="#"
-        class="text-light btn btn-dark w-100 py-4">
+        <a href=""
+        class="text-light btn btn-dark w-100 py-4"
+        data-toggle="modal" data-target="#Modal_2">
           <span class="fas fa-share-alt mr-4"></span>
           <span class="text-uppercase m-0">Partager cette page</span>
         </a>
@@ -309,6 +311,111 @@ mémo :
         <p class="text-dark">Copyright &copy; 2020 - Tous droits réservés</p>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="Modal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Enregistrez les données du contact</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Comment souhaitez-vous enregistrer les coordonnées ?
+          </div>
+          <div class="">
+            <a href="#collapseEmail"
+            data-toggle="collapse"
+            class="text-light btn btn-primary w-100 py-4">
+              <span class="far fa-envelope"></span>
+              <span class="text-uppercase m-0">Envoyer par E-mail</span>
+            </a>
+            <a href="#collapseSave"
+            data-toggle="collapse"
+            class="text-light btn btn-primary w-100 py-4">
+              <span class="far fa-save"></span>
+              <span class="text-uppercase m-0">Enregistrer sur mon téléphone</span>
+            </a>
+
+            <div class="collapse" id="collapseEmail">
+              <div class="card card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+            <div class="collapse" id="collapseSave">
+              <div class="card card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Mobile</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Envoyer par E-mail</button>
+          <button type="button" class="btn btn-primary">Enregistrer sur mon téléphone</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="Modal_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Partager</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- <div class="modal-body">
+          Comment souhaitez-vous enregistrer les coordonnées ?
+        </div> -->
+        <div class="">
+          <a href=""
+          class="text-light btn btn-primary w-100 py-4">
+            <span class="fas fa-fw fa-paper-plane"></span>
+            <span class="text-uppercase m-0">E-mail</span>
+          </a>
+          <a href=""
+          class="text-light btn btn-primary w-100 py-4">
+            <span class="fab fa-facebook"></span>
+            <span class="text-uppercase m-0">Facebook</span>
+          </a>
+          <a href=""
+          class="text-light btn btn-primary w-100 py-4">
+            <span class="fab fa-twitter"></span>
+            <span class="text-uppercase m-0">Twitter</span>
+          </a>
+          <a href=""
+          class="text-light btn btn-primary w-100 py-4">
+            <span class="fab fa-whatsapp"></span>
+            <span class="text-uppercase m-0">Whatsapp</span>
+          </a>
+
+        </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Envoyer par E-mail</button>
+        <button type="button" class="btn btn-primary">Enregistrer sur mon téléphone</button>
+      </div> -->
+    </div>
+  </div>
+</div>
 
     <!-- Optional JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
